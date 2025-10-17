@@ -4,8 +4,8 @@
   font-family: var(--main-font), sans-serif;
   font-size: 18px;
   font-variation-settings: "wght" var(--text-font-weight);
-  background-image: var(--bkg-repeating-gradient-vertical), var(--bkg-repeating-gradient-horizontal),
-  var(--bkg-gradient);
+  background-image: var(--bkg-repeating-gradient-vertical),
+    var(--bkg-repeating-gradient-horizontal), var(--bkg-gradient);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,12 +29,12 @@
   display: grid;
   gap: 20px;
   padding: var(--header-padding) 0;
-  justify-items: center; 
+  justify-items: center;
   text-transform: uppercase;
 }
 
 .main-title {
-  font-size: var(--main-title-font-size); 
+  font-size: var(--main-title-font-size);
 }
 
 .header-text {
@@ -113,22 +113,23 @@
 }
 /*конец*/
 
-.label-text{
+.label-text {
   position: absolute;
   top: 25px;
   right: 25px;
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   text-transform: uppercase;
-  text-shadow: -1px 0 var(--primary-color),
-  0 1px var(--primary-color),
-  1px 0 var(--primary-color),
-  0 -1px var(--primary-color);
+  text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color),
+    1px 0 var(--primary-color), 0 -1px var(--primary-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
 }
 
-@supports ((-webkit-text-stroke: 0.5px var(--primary-color)) or (text-stroke: 0.5px var(--primary-color))) {
+@supports (
+  (-webkit-text-stroke: 0.5px var(--primary-color)) or
+    (text-stroke: 0.5px var(--primary-color))
+) {
   .label-text {
     -webkit-text-stroke: 0.5px var(--primary-color);
     text-stroke: 0.5px var(--primary-color);
@@ -155,7 +156,7 @@
 .like-icon {
   inline-size: 39px;
   block-size: 34px;
-  display: block; 
+  display: block;
 }
 
 /*анимация сердечка <3*/
@@ -164,7 +165,7 @@
 }
 
 .contour {
-  transition: fill linear 0.1s;  
+  transition: fill linear 0.1s;
 }
 
 .core {
@@ -220,7 +221,7 @@
 .card__like-button {
   border: var(--border-style);
   inline-size: 130px;
-  block-size: 38px; 
+  block-size: 38px;
 }
 
 .button__text {
@@ -288,7 +289,7 @@
   text-transform: uppercase;
 }
 
-.ok-button{
+.ok-button {
   border: var(--border-style);
   inline-size: var(--ok-bt-width);
   block-size: 38px;
@@ -307,7 +308,7 @@
 }
 
 .card__icon-button:focus {
-  outline:none;
+  outline: none;
 }
 
 .card__icon-button:focus-visible {
@@ -316,7 +317,7 @@
 }
 
 .button-animation::before {
-  content:"";
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--accent-color);
@@ -326,7 +327,7 @@
 }
 
 .button-animation:hover::before {
-  transform: scaleX(1); 
+  transform: scaleX(1);
 }
 
 @media (width <= 375px) {

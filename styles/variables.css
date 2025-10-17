@@ -17,12 +17,19 @@
   --ok-bt-width: clamp(16.313rem, 3.005vw + 15.608rem, 18.313rem);
 
   /*градиенты + цвета*/
-  --bkg-repeating-gradient-horizontal: repeating-linear-gradient(rgb(211 211 211) 0px 2px, rgb(211 211 211 / 0) 2px 4px);
-  --bkg-repeating-gradient-vertical: repeating-linear-gradient(to right, rgb(211 211 211) 0px 2px, rgb(211 211 211 / 0) 2px 4px);
+  --bkg-repeating-gradient-horizontal: repeating-linear-gradient(
+    rgb(211 211 211) 0px 2px,
+    rgb(211 211 211 / 0) 2px 4px
+  );
+  --bkg-repeating-gradient-vertical: repeating-linear-gradient(
+    to right,
+    rgb(211 211 211) 0px 2px,
+    rgb(211 211 211 / 0) 2px 4px
+  );
   --bkg-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --border-style: 2px solid black;
   --primary-color: white;
   --accent-color: black;
   --contour-color: black;
-  --animation-fill-color: #FF0000;
+  --animation-fill-color: #ff0000;
 }
