@@ -232,6 +232,10 @@
   line-height: 90%;
 }
 
+.button-center {
+  justify-self: center;
+}
+
 .save-button {
   border: var(--border-style);
   inline-size: var(--save-bt-width);
@@ -240,7 +244,6 @@
   background-color: var(--primary-color);
   grid-auto-flow: column;
   justify-content: center;
-  justify-self: center;
   align-items: center;
   gap: 8px;
   margin-top: 50px;
