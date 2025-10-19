@@ -11,12 +11,12 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 100px 0;
-  display: grid;
-  justify-content: center;
 }
 
 .header {
   margin-bottom: 100px;
+  display: grid;
+  justify-self: center;
 }
 
 .content-style {
@@ -45,6 +45,7 @@
 .content-list {
   display: grid;
   gap: 53px;
+  justify-content: center;
 }
 
 .content-item {
@@ -259,8 +260,7 @@
   position: fixed;
   inset: 0;
   inline-size: var(--dialog-width);
-  padding: 30px 0;
-  justify-items: center;
+  padding: 30px 0; 
 }
 
 .dialog-style[open]::backdrop {
@@ -271,6 +271,7 @@
 .dialog-grid {
   display: grid;
   gap: 30px;
+  justify-items: center;
 }
 
 .dialog-content {
@@ -339,6 +340,11 @@
   .content-style {
     inline-size: 100%;
   }
+
+  .decorated-title {
+    font-size: 45px;
+  }
+
   .save-button {
     grid-auto-flow: row;
     justify-items: center;
