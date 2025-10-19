@@ -587,24 +587,26 @@
       </button>
     </main>
     <dialog id="dialog-id" class="dialog-style">
-      <div class="dialog-content">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 22 21"
-          class="svg-diskette-dialog"
-        >
-          <use href="./svg/diskette.svg#diskette"></use>
-        </svg>
-        <div class="dialog-text">
-          <p>Вставьте</p>
-          <p>дискету, чтобы продолжить</p>
+      <div class="dialog-grid">
+        <div class="dialog-content">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 22 21"
+            class="svg-diskette-dialog"
+          >
+            <use href="./svg/diskette.svg#diskette"></use>
+          </svg>
+          <div class="dialog-text">
+            <p>Вставьте</p>
+            <p>дискету, чтобы продолжить</p>
+          </div>
         </div>
+        <form method="dialog">
+          <button class="button ok-button button-animation" type="submit">
+            <span class="button__text">ок</span>
+          </button>
+        </form>
       </div>
-      <form method="dialog">
-        <button class="button ok-button button-animation" type="submit">
-          <span class="button__text">ок</span>
-        </button>
-      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
