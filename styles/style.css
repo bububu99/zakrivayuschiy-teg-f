@@ -11,12 +11,12 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 100px 0;
+  display: grid;
+  justify-self: center;
 }
 
 .header {
   margin-bottom: 100px;
-  display: grid;
-  justify-self: center;
 }
 
 .content-style {
@@ -45,7 +45,6 @@
 .content-list {
   display: grid;
   gap: 53px;
-  justify-content: center;
 }
 
 .content-item {
@@ -233,11 +232,6 @@
   line-height: 90%;
 }
 
-.button-save-grid {
-  display: grid;
-  justify-self: center;;
-}
-
 .save-button {
   border: var(--border-style);
   inline-size: var(--save-bt-width);
@@ -246,6 +240,7 @@
   background-color: var(--primary-color);
   grid-auto-flow: column;
   justify-content: center;
+  justify-self: center;
   align-items: center;
   gap: 8px;
   margin-top: 50px;
@@ -342,10 +337,6 @@
 @media (width <= 375px) {
   .content-style {
     inline-size: 100%;
-  }
-
-  .decorated-title {
-    font-size: 45px;
   }
 
   .save-button {
