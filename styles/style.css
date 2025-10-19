@@ -12,7 +12,7 @@
   background-attachment: fixed;
   margin: 100px 0;
   display: grid;
-  justify-self: center;
+  justify-content: center;
 }
 
 .header {
